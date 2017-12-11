@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDFF">
+
+    <include
+        layout="@layout/signup_sub_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/ivitemshow"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_above="@+id/textInputLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/basic" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/itemtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:focusable="false"
+            android:clickable="false"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textInputLayout"
+        android:layout_alignStart="@+id/textInputLayout"
+        android:layout_below="@+id/textInputLayout"
+        android:layout_marginTop="14dp">
+
+        <EditText
+            android:id="@+id/itemcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:hint="Content"
+            android:lines="3"
+            android:focusable="false"
+            android:clickable="false"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textInputLayout2"
+        android:layout_alignStart="@+id/textInputLayout2"
+        android:layout_below="@+id/textInputLayout2"
+        android:layout_marginTop="13dp">
+
+        <EditText
+            android:id="@+id/itemwriter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="writer"
+            android:focusable="false"
+            android:clickable="false"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textInputLayout3"
+        android:layout_alignStart="@+id/textInputLayout3"
+        android:layout_below="@+id/textInputLayout3"
+        android:layout_marginTop="17dp">
+
+        <EditText
+            android:id="@+id/itemregdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="register_date"
+            android:focusable="false"
+            android:clickable="false"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>

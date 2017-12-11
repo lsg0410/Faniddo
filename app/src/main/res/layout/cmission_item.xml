@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/missionCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:background="#DDDDFF">
+
+
+            <TextView
+                android:id="@+id/cmission_tvtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#40a800"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/cmission_tvcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cmission_tvtitle"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

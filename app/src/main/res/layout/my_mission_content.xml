@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DDDDFF">
+
+    <include
+        layout="@layout/signup_sub_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/textInputLayout2"
+        android:layout_alignLeft="@+id/textInputLayout2"
+        android:layout_alignStart="@+id/textInputLayout2">
+
+        <EditText
+            android:id="@+id/mstitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:ems="10"
+            android:hint="미션 제목"
+            android:inputType="textPersonName"
+            android:focusable="false"
+            android:clickable="false" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/mscontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:ems="10"
+            android:hint="미션 내용"
+            android:gravity="start"
+            android:lines="5"
+            android:maxLines="10"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"
+            android:focusable="false"
+            android:clickable="false"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/mission_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="107dp"
+        android:text="수행 완료"
+        android:background="@drawable/bt_corner"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

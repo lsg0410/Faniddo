@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="56dp"
+        android:background="#FFCC33">
+
+        <TextView
+            android:id="@+id/letter_search_writer"
+            android:layout_width="0px"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="#FFCC33"
+            android:gravity="center"
+            android:text="보낸이"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/letter_search_title"
+            android:layout_width="0px"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="2"
+            android:background="#FFCC33"
+            android:gravity="center"
+            android:text="제목"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/letter_search_regdate"
+            android:layout_width="0px"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="2"
+            android:background="#FFCC33"
+            android:gravity="center"
+            android:text="받은시간"
+            android:textColor="#000000" />
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/signup_sub_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_letter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="115dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/letter_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="115dp"></android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

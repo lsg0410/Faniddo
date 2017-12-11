@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDFF">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/boardCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="#DDDDFF">
+
+            <ImageView
+                android:id="@+id/ivimg"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvtitle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivimg"
+                android:layout_alignLeft="@+id/ivimg"
+                android:layout_alignStart="@+id/ivimg" />
+
+            <TextView
+                android:id="@+id/tvwriter"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvtitle"
+                android:layout_alignLeft="@+id/tvtitle"
+                android:layout_alignStart="@+id/tvtitle" />
+
+            <TextView
+                android:id="@+id/tvregdate"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvwriter"
+                android:layout_alignLeft="@+id/tvwriter"
+                android:layout_alignStart="@+id/tvwriter" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

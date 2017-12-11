@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.yjkim.faniddo.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="#DDDDFF">
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipe_general"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/letter_write">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/letter_write">
+    </android.support.v7.widget.RecyclerView>
+
+</android.support.v4.widget.SwipeRefreshLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#DDDDFF"
+        android:id="@+id/relativeLayout2">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_add"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginEnd="13dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/letter_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="68dp"
+        android:layout_marginStart="68dp"
+        android:text="한줄편지쓰기"
+        android:background="@drawable/bt_corner"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/letter_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:text="한줄편지보기"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/letter_write"
+        android:layout_toEndOf="@+id/letter_write"
+        android:background="@drawable/bt_corner"/>
+
+</RelativeLayout>

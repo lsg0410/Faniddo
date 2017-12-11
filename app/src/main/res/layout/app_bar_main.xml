@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yjkim.faniddo.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/letter"
+        layout="@layout/content_main"
+        android:visibility="visible"/>
+
+    <include
+        android:id="@+id/mission"
+        layout="@layout/content_mission"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/consult"
+        layout="@layout/content_consult"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/profile"
+        layout="@layout/content_profile"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/friend_list"
+        layout="@layout/content_friend_list"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/friend_add"
+        layout="@layout/content_friend_add"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/father_board"
+        layout="@layout/content_father_board"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/son_board"
+        layout="@layout/content_son_board"
+        android:visibility="gone"/>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

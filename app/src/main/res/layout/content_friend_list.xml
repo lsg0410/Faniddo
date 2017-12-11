@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/relativeLayout"
+        android:layout_marginTop="55dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="부모님 목록"
+            android:textSize="20dp"
+            android:id="@+id/textView"
+            android:textColor="#000000"
+            android:background="#FFCC33"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/parentlistrv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentBottom="true">
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="친구 목록"
+            android:textSize="20dp"
+            android:id="@+id/ftitle"
+            android:textColor="#000000"
+            android:background="#FFCC33"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/friendrv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ftitle">
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

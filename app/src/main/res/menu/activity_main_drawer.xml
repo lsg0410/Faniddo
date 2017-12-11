@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_general"
+            android:icon="@drawable/letter"
+            android:title="일반게시판/한줄편지"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_mission"
+            android:icon="@drawable/mission"
+            android:title="아빠와의 미션" />
+        <item
+            android:id="@+id/nav_consult"
+            android:icon="@drawable/question"
+            android:title="고민상담" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="프로필 설정" />
+    </group>
+
+
+    <item android:title="Communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_father"
+                    android:icon="@drawable/father"
+                    android:title="아빠들의 게시판" />
+                <item
+                    android:id="@+id/nav_son"
+                    android:icon="@drawable/children"
+                    android:title="자녀들의 게시판" />
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Friend">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_friend"
+                    android:icon="@drawable/friend"
+                    android:title="친구목록" />
+                <item
+                    android:id="@+id/nav_friend_add"
+                    android:icon="@drawable/fadd"
+                    android:title="친구추가" />
+            </group>
+        </menu>
+    </item>
+</menu>
